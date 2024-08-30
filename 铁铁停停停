@@ -126,7 +126,7 @@ ca.TextSize=22;da.Parent=ca
 da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
 da.Size=UDim2.new(0,304,0,107)_b.Parent=da
 _b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
-_b.Size=UDim2.new(0,304,0,21)_b.Font=Enum.Font.Arial;_b.Text="作者夏梦（QQ）"
+_b.Size=UDim2.new(0,304,0,21)_b.Font=Enum.Font.Arial;_b.Text="作者龙苏🤓🤓（QQ）"
 _b.TextColor3=Color3.new(1,1,1)_b.TextSize=20;ab.Parent=da
 ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377379,0)
 ab.Size=UDim2.new(0,304,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="自动卡宠:已开启 "
@@ -160,6 +160,7 @@ Tab:AddButton({
 Tab:AddParagraph("缝合脚本")
 Tab:AddParagraph("作者夏梦")
 Tab:AddParagraph("会持续更新")
+Tab:AddParagraph("停更因为作者要开学了")
 	
  local Tab =Window:MakeTab({
 	Name = "巴掌模拟器",
@@ -552,6 +553,21 @@ Tab:AddButton({
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))
 	end
 })
+
+Tab:AddButton({
+	Name = "WUSbf",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "WUSbf",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E6%B5%B7%E8%B4%BC%E7%8E%8Bbf.lua", true))()
+	end
+})
+
 
 local Tab =Window:MakeTab({
 	Name = "模仿者",
@@ -1212,260 +1228,6 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[tbxVic
 end
 end)
    end
-})
-
-local Tab = Window:MakeTab({
-
-    Name = "玩家",
-
-    Icon = "rbxassetid://4483345998",
-
-    PremiumOnly = false
-
-})
-
-local Section = Tab:AddSection({
-
-	Name = "欢迎欢迎"
-
-})
-
-Tab:AddSlider({
-
-	Name = "速度",
-
-	Min = 16,
-
-	Max = 200,
-
-	Default = 16,
-
-	Color = Color3.fromRGB(255,255,255),
-
-	Increment = 1,
-
-	ValueName = "数值",
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-
-	end    
-
-})
-
-Tab:AddSlider({
-
-	Name = "跳跃高度",
-
-	Min = 50,
-
-	Max = 200,
-
-	Default = 50,
-
-	Color = Color3.fromRGB(255,255,255),
-
-	Increment = 1,
-
-	ValueName = "数值",
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-
-	end    
-
-})
-
-Tab:AddTextbox({
-
-	Name = "跳跃高度设置",
-
-	Default = "",
-
-	TextDisappear = true,
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-
-	end
-
-})
-
-Tab:AddTextbox({
-
-	Name = "移动速度设置",
-
-	Default = "",
-
-	TextDisappear = true,
-
-	Callback = function(Value)
-
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-
-	end
-
-})
-
-Tab:AddTextbox({
-
-	Name = "重力设置",
-
-	Default = "",
-
-	TextDisappear = true,
-
-	Callback = function(Value)
-
-		game.Workspace.Gravity = Value
-
-	end
-
-})
-
-Tab:AddToggle({
-
-	Name = "夜视",
-
-	Default = false,
-
-	Callback = function(Value)
-
-		if Value then
-
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-
-		else
-
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-
-		end
-
-	end
-
-})
-
-Tab:AddButton({
-
-	Name = "飞行V3（隐藏）",
-
-	Callback = function()
-
-     loadstring(game:HttpGet('https://pastebin.com/raw/U27yQRxS'))()
-
-  	end    
-
-})
-
-Tab:AddButton({
-
-	Name = "替身",
-
-	Callback = function()
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/SkrillexMe/SkrillexLoader/main/SkrillexLoadMain')))()
-
-    end
-
-})
-
-Tab:AddButton({
-
-	Name = "爬墙",
-
-	Callback = function()
-
-loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
-
-end
-
-})
-
-Tab:AddButton({
-
-	Name = "光影V4",
-
-	Callback = function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
-
-end
-
-})
-
-Tab:AddButton({
-
-	Name = "变成蛇",
-
-	Callback = function()
-
-loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
-
-	end
-
-})
-
-Tab:AddButton({
-
-	Name = "让别让别人控制自己",
-
-	Callback = function()
-
-loadstring(game:HttpGet(('https://pastefy.ga/a7RTi4un/raw'),true))()
-
-	end
-
-})
-
-Tab:AddButton({
-
-	Name = "点击传送工具",
-
-	Callback = function()
-
-mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.RequiresHandle = false tool.Name = "[FE] TELEPORT TOOL" tool.Activated:connect(function() local pos = mouse.Hit+Vector3.new(0,2.5,0) pos = CFrame.new(pos.X,pos.Y,pos.Z) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos end) tool.Parent = game.Players.LocalPlayer.Backpack
-
-	end
-
-})
-
-Tab:AddButton({
-
-	Name = "全(英文😭)",
-
-	Callback = function()
-
-loadstring(game:HttpGet("https://pastebin.com/raw/kEq7bdf9"))()
-
-end
-
-})
-
-Tab:AddButton({
-
-	Name = "地岩",
-
-	Callback = function()
-
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\98\97\109\120\98\98\97\109\120\98\98\97\109\120\47\99\111\100\101\115\112\97\99\101\115\45\98\108\97\110\107\47\109\97\105\110\47\37\69\55\37\57\57\37\66\68\34\41\41\40\41")()
-
-	end
-
-})
-
-Tab:AddButton({
-
-	Name = "dx旧版本",
-
-	Callback = function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DXuwu/test-lol/main/YO.lua"))()
-
-end
-
 })
 
 local Tab = Window:MakeTab({
@@ -3914,4 +3676,1359 @@ Tab:AddButton({
 	end
 })
 
+local Tab =Window:MakeTab({
+	Name = "亡灵防御大享",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
+Tab:AddButton({
+	Name = "WUS亡灵防御大享要卡密",
+	Callback = function()
+	loadstring(game:HttpGet"https://thedragonslayer2.github.io/AutoExec.html")()
+	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "压力",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "WUS压力",
+	Callback = function()
+	loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
+	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "一场尘土飞扬的旅行",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "WUS一场尘土飞扬的旅行",
+	Callback = function()
+	loadstring(game:HttpGet("https://scriptblox.com/raw/a-dusty-trip-FREE-CAR-Gui-14352"))()
+	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "破坏者谜团2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
+	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "寻宝",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	local TresureBreakSimulator = Instance.new("ScreenGui")
+local BG = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local ToolBoxBG = Instance.new("Frame")
+local ToolBox = Instance.new("TextBox")
+local AutoFarm = Instance.new("TextButton")
+local AutoRebirth = Instance.new("TextButton")
+local Top = Instance.new("TextLabel")
+ 
+--Toggle
+local Farm = false
+local Rebirth = false
+ 
+--ButtonToggle
+local Click1 = false
+local Click2 = false
+ 
+TresureBreakSimulator.Name = "TresureBreakSimulator"
+TresureBreakSimulator.Parent = game.CoreGui
+TresureBreakSimulator.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BG.Name = "BG"
+BG.Parent = TresureBreakSimulator
+BG.BackgroundColor3 = Color3.new(1, 0.823529, 0.54902)
+BG.BackgroundTransparency = 0.20000000298023
+BG.BorderColor3 = Color3.new(0, 0, 0)
+BG.BorderSizePixel = 5
+BG.Position = UDim2.new(0.604587197, 0, 0.30796814, 0)
+BG.Size = UDim2.new(0, 250, 0, 150)
+BG.Active = true
+BG.Selectable = true
+BG.Draggable = true
+Line.Name = "Line"
+Line.Parent = BG
+Line.BackgroundColor3 = Color3.new(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0, 72)
+Line.Size = UDim2.new(0, 250, 0, 5)
+ToolBoxBG.Name = "ToolBoxBG"
+ToolBoxBG.Parent = BG
+ToolBoxBG.BackgroundColor3 = Color3.new(1, 0.823529, 0.54902)
+ToolBoxBG.BackgroundTransparency = 0.20000000298023
+ToolBoxBG.BorderColor3 = Color3.new(0, 0, 0)
+ToolBoxBG.BorderSizePixel = 5
+ToolBoxBG.Position = UDim2.new(0, 25, 1, 5)
+ToolBoxBG.Size = UDim2.new(0, 200, 0, 50)
+ToolBox.Name = "ToolBox"
+ToolBox.Parent = ToolBoxBG
+ToolBox.BackgroundColor3 = Color3.new(0.490196, 0.490196, 0.490196)
+ToolBox.BorderColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+ToolBox.BorderSizePixel = 0
+ToolBox.Size = UDim2.new(0, 200, 0, 50)
+ToolBox.Font = Enum.Font.GothamBold
+ToolBox.PlaceholderColor3 = Color3.new(0, 0, 0)
+ToolBox.PlaceholderText = "Tool Name"
+ToolBox.Text = game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Name
+ToolBox.TextColor3 = Color3.new(0, 0, 0)
+ToolBox.TextSize = 35
+ToolBox.TextWrapped = true
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = BG
+AutoFarm.BackgroundColor3 = Color3.new(0.882353, 0.882353, 0.882353)
+AutoFarm.BorderColor3 = Color3.new(1, 0, 0)
+AutoFarm.BorderSizePixel = 5
+AutoFarm.Position = UDim2.new(0, 25, 0, 5)
+AutoFarm.Size = UDim2.new(0, 200, 0, 62)
+AutoFarm.Font = Enum.Font.GothamBold
+AutoFarm.Text = "Auto Farm"
+AutoFarm.TextColor3 = Color3.new(1, 0, 0)
+AutoFarm.TextScaled = true
+AutoFarm.TextSize = 14
+AutoFarm.TextWrapped = true
+AutoFarm.MouseButton1Click:Connect(function()
+	if Click1 then
+		Click1 = false
+		Farm = false
+		AutoFarm.TextColor3 = Color3.new(1,0,0)
+		AutoFarm.BorderColor3 = Color3.new(1,0,0)
+	else
+        if game.Players.LocalPlayer.Character:FindFirstChild(ToolBox.Text) then
+			print('Already EquipTool')
+		else
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack[ToolBox.Text])
+        end
+		Click1 = true
+		Farm = true
+		AutoFarm.TextColor3 = Color3.new(0,1,0)
+		AutoFarm.BorderColor3 = Color3.new(0,1,0)
+	end
+end)
+AutoRebirth.Name = "AutoRebirth"
+AutoRebirth.Parent = BG
+AutoRebirth.BackgroundColor3 = Color3.new(0.882353, 0.882353, 0.882353)
+AutoRebirth.BorderColor3 = Color3.new(1, 0, 0)
+AutoRebirth.BorderSizePixel = 5
+AutoRebirth.Position = UDim2.new(0, 25, 0, 82)
+AutoRebirth.Size = UDim2.new(0, 200, 0, 62)
+AutoRebirth.Font = Enum.Font.GothamBold
+AutoRebirth.Text = "Auto Rebirth"
+AutoRebirth.TextColor3 = Color3.new(1, 0, 0)
+AutoRebirth.TextScaled = true
+AutoRebirth.TextSize = 14
+AutoRebirth.TextWrapped = true
+AutoRebirth.MouseButton1Click:Connect(function()
+	if Click1 then
+		Click1 = false
+		Rebirth = false
+		AutoRebirth.TextColor3 = Color3.new(1,0,0)
+		AutoRebirth.BorderColor3 = Color3.new(1,0,0)
+	else
+		Click1 = true
+		Rebirth = true
+		AutoRebirth.TextColor3 = Color3.new(0,1,0)
+		AutoRebirth.BorderColor3 = Color3.new(0,1,0)
+	end
+end)
+Top.Name = "Top"
+Top.Parent = BG
+Top.Active = true
+Top.BackgroundColor3 = Color3.new(1, 0.823529, 0.54902)
+Top.BorderColor3 = Color3.new(0, 0, 0)
+Top.BorderSizePixel = 5
+Top.Position = UDim2.new(0, 25, 0, -30)
+Top.Selectable = true
+Top.Size = UDim2.new(0, 200, 0, 25)
+Top.Font = Enum.Font.GothamBold
+Top.Text = "Treasure Break Simulator"
+Top.TextColor3 = Color3.new(0, 0, 0)
+Top.TextScaled = true
+Top.TextSize = 14
+Top.TextWrapped = true
+ 
+local Character = game.Workspace:WaitForChild(game.Players.LocalPlayer.Name)
+ 
+function Sell()
+	local OldPos = Character.HumanoidRootPart.CFrame
+	Character.HumanoidRootPart.CFrame = CFrame.new(3, 10, -160)
+	game.ReplicatedStorage.Events.AreaSell:FireServer()
+	wait(0.1)
+	Character.HumanoidRootPart.CFrame = OldPos
+end
+ 
+local function RE()
+	while true do
+		wait(1)
+		if Rebirth == true then
+			local a = game.Players.LocalPlayer.PlayerGui.Gui.Buttons.Coins.Amount.Text:gsub(',','')
+			local b = game.Players.LocalPlayer.PlayerGui.Gui.Rebirth.Needed.Coins.Amount.Text:gsub(',','')
+			print(tonumber(a))
+			print(tonumber(b))
+			if tonumber(a) > tonumber(b) then 
+				warn('Calculation Complete!')
+				game.ReplicatedStorage.Events.Rebirth:FireServer()
+				ToolBox.Text = "Bucket"
+				repeat wait(.1) until game.Players.LocalPlayer.PlayerGui.Gui.Popups.GiveReward.Visible == true
+				game.Players.LocalPlayer.PlayerGui.Gui.Popups.GiveReward.Visible = false
+				wait()
+			end
+		end
+	end
+end
+ 
+spawn(RE)
+ 
+while true do
+	wait()
+	if Farm then
+		local Sand = nil
+		local SandName = ""
+		for i,v in pairs (game.Workspace.SandBlocks:GetChildren()) do
+			if not Farm then 
+				Sell()
+				break 
+			end
+			if v:FindFirstChild("Chest") then
+				if v.CFrame.X > -40 and v.CFrame.X < 20 and v.CFrame.Z < -175 and v.CFrame.Z > -235 then
+					local Next = false
+					if v == nil then
+						Next = false
+					else
+						Next = true
+						Sand = v
+						SandName = v.Name
+					end
+					if Next == true then
+						local Success,Problem = pcall(function()
+						if game.Players[game.Players.LocalPlayer.Name].PlayerGui.Gui.Popups.BackpackFull.Visible == true then Sell() end
+							Sand.CanCollide = false
+							local Coins = game.Players.LocalPlayer.PlayerGui.Gui.Buttons.Coins.Amount.Text
+							repeat
+								if game.Players[game.Players.LocalPlayer.Name].PlayerGui.Gui.Popups.BackpackFull.Visible == true then Sell() end
+								if not Farm then 
+									wait(.1)
+									Character.HumanoidRootPart.CFrame = CFrame.new(3, 10, -160)
+									wait(1)
+									break 
+								end
+								Character.HumanoidRootPart.Anchored = true
+								wait()
+								Character.HumanoidRootPart.CFrame = Sand.CFrame
+								wait()
+								Character.HumanoidRootPart.Anchored = false
+								Character:WaitForChild(ToolBox.Text)['RemoteClick']:FireServer(game.Workspace.SandBlocks[SandName])
+								wait()
+							until game.Players.LocalPlayer.PlayerGui.Gui.Buttons.Coins.Amount.Text ~= Coins
+							Next = false
+						end)
+						if Success then
+							print('Worked')
+						else
+							warn(Problem)
+						end
+					end
+				end
+			end
+		end
+	end
+end
+	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "小偷模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/adrician/Thief-Simulator---GUI/main/Thief%20sim.lua"),true))()
+	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "钓鱼",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	--To Do List
+--Sunken Ships are named 'ShipModel' then an integer.
+--Add Fly
+--Add Auto Fish with fish detection
+--Add Auto Shark
+--Add Shark ESP
+--Add Sunken Ship ESP
+--Add Auto Quest Complete
+--Add Legendary and Mythic Only Mode through Hook Function
+--Add Collect Daily Chests 
+	--Monster's Borough
+	--Location 1: -3331.9873, 84.9329681, 2672.59546
+	--Location 2: -3361.08521, 116.190727, 2824.31201
+	--Location 3: -3106.71753, 40.5118103, 2906.54956
+	--Location 4: -883.169434, 44.9942093, 3060.43579
+	--Ancient Shores
+	--Location 1: -2426.84131, 110.925598, -2122.33936
+--Change Auto Sell to use SellEverything function instead
+--Fix Speed when Swimming at Ocean Top
+--Add Auto Chest Collect that works for both sunken ships and daily chests
+--Complete Auto Ship
+--Change Sell All Below Legendary to Toggle for Both Auto Sell and Auto Any Kill
+
+--Completed To Do List
+--Add Level Barrier Removal
+--Add Boat Barrier Removal
+--Fix Anti-AFK
+--Add in Gamepass Toggle
+--Add Respawn Where Died
+--Add Teleport to Boat
+--Add Boat Menu; Torque, Max Speed, Turn Speed;
+--Add Player Menu; Jump Power, Walk Speed;
+--Edit Level Barrier Removal to detect if sitting in boat and unsit
+--Add Teleport to Shops
+--Add Teleport to Caster
+--Add Teleport to Player
+--Add Teleport to Fish Aquarium
+--Add Backup Location Data with Button
+--Add Teleport to Islands
+
+--Debug Print
+local currVersion = "v1.4"
+
+_G.fishdebug = true
+function dprint(str)
+	if _G.fishdebug then
+		game:GetService('TestService'):Message("[Fish Sim GUI] "..str)
+	end
+end
+
+--Load GUI
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/djhHQFXz", true))()
+dprint("GUI Library Loaded")
+local fishGui = library:CreateWindow('Fish Sim ' .. currVersion)
+dprint("GUI Window Created")
+local mainGui = library:CreateWindow('Main')
+dprint("Main Window Created")
+local teleGui = library:CreateWindow('Teleport')
+dprint("Teleport Window Created")
+local debugGui = library:CreateWindow('Debug')
+dprint("Debug Window Created")
+
+--Global Variables
+local inputService = game:GetService("UserInputService")
+dprint("User Input Service Variable Loaded")
+local boundSpace = game.Workspace.IgnoredByMouse
+dprint("Bound Space Workspace Loaded")
+local playerList = game:GetService("Players")
+dprint("Player List Variable Loaded")
+local plr = playerList.LocalPlayer
+dprint("Local Player Variable Loaded")
+local hrp = plr.Character.HumanoidRootPart
+dprint("HumanoidRootPart Variable Loaded")
+local mse = plr:GetMouse()
+dprint("Mouse Variable Loaded")
+local lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+dprint("Set Last Location at Spawn")
+
+--Debug Functions
+
+--Rejoin Function
+local bRejoin = debugGui:Button("Rejoin", function()
+	game:GetService('TeleportService'):Teleport(game.PlaceId)
+	dprint("bRejoin Clicked")
+end)
+
+--Force Start (NOT WORKING)
+--[[
+local bForceStart = debugGui:Button("Force Start",
+	function()
+		
+	end
+)
+]]
+
+--Unload Script (NOT WORKING)
+--[[
+local bUnload = debugGui:Button("Unload",
+	function()
+		script:Remove()
+	end
+)
+]]
+
+--Disable Console Game Warnings (NOT WORKING)
+--[[
+local tWarn = debugGui:Toggle("Disable Warn", {flag = "tWarn"})
+local warnHook = hookfunction(warn, 
+	function(...)
+		if debugGui.flags.tWarn then
+			return
+		else
+			return warnHook(...)
+		end
+	end
+)
+]]
+
+--Click to Teleport Function
+local tCtrl = debugGui:Toggle("Ctrl-TP", {flag = "ctrlTp"})
+
+function cCtrlTp()
+	inputService.InputBegan:Connect(function(input)
+		if inputService:IsKeyDown(Enum.KeyCode.LeftControl) and debugGui.flags.ctrlTp then
+			if mse.Target then
+				hrp.CFrame = CFrame.new(mse.Hit.x, mse.Hit.y + 3, mse.Hit.z)
+				dprint("Teleported to "..mse.Hit.x.." , "..mse.Hit.y.." , "..mse.Hit.z)
+			end
+		end
+	end)
+end
+
+cCtrlTp()
+
+--Anti AFK
+local tAfk = debugGui:Toggle("Anti-AFK", {flag = "fAntiAfk"})
+
+function antiAfk()
+	local VirtualUser = game:GetService('VirtualUser')
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		if debugGui.flags.fAntiAfk then
+			VirtualUser:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			wait(3)
+			VirtualUser:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			dprint("Anti-AFK Script Active")
+		end
+	end)
+end
+
+antiAfk()
+
+--NoClip
+local tNoClip = debugGui:Toggle("NoClip", {flag = "fNoClip"})
+local tNoClipToggle = false
+
+debugGui:Bind("NoClip Bind", {
+   flag = "dNoClip";
+   kbonly = true;
+   default = Enum.KeyCode.V;
+}, function()
+	if debugGui.flags.fNoClip then
+		tNoClipToggle = not tNoClipToggle
+		dprint("NoClip Toggled: "..tostring(tNoClipToggle))
+	end
+end)
+
+game:getService("RunService"):BindToRenderStep("",0,function()
+	if not game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid") and debugGui.flags.fNoClip then return end
+	
+	if debugGui.flags.fNoClip and tNoClipToggle then
+		game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
+		dprint("NoClip Activated")
+	end
+end)
+
+
+--Main Window Functions
+
+fishGui:Section('Client Sided')
+dprint("Client Sided Section Created")
+
+--Toggle Game Passes (Client Sided)
+local bGamePasses = fishGui:Button("Toggle All Gamepasses", function()
+	for i, v in pairs(plr.LocalData.Gamepasses:GetChildren()) do
+		v.Value = not v.Value
+	end
+	dprint("Gamepasses Toggled")
+end)
+
+fishGui:Section('Barriers')
+dprint("Barrier Section Created")
+
+--Level Barrier Removal
+local bLvlBar = fishGui:Button("Remove Level Barriers", function()
+	for i, v in pairs(boundSpace.LockedAreas:GetDescendants()) do 
+		v:Destroy()
+	end
+	dprint("Level Barriers Removed")
+end)
+
+--Boat Barrier Removal
+local bBoatBar = fishGui:Button("Remove Boat Barriers", function()
+	for i, v in pairs(boundSpace.BoatBorders:GetDescendants()) do 
+		v:Destroy()
+	end
+	dprint("Boat Barriers Removed")
+end)
+
+fishGui:Section('Character')
+dprint("Character Section Created")
+
+--Character and Boat Status
+local tRespawn = fishGui:Toggle("Respawn Where Died", {flag = "fRespawn"})
+dprint("fRespawn Status: "..tostring(fishGui.flags.fRespawn))
+
+--WalkSpeed Changer
+local xSpeed = fishGui:Box("Speed (16/23)", {
+	flag = "ws";
+	type = 'number';
+}, function(new)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(new)
+	dprint("WalkSpeed set to "..new)
+end)
+
+--JumpPower Changer
+local xJump = fishGui:Box("Jump (50)", {
+	flag = "jp";
+	type = 'number';
+}, function(new)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(new)
+	dprint("JumpPower set to "..new)
+end)
+
+fishGui:Section('Boat')
+dprint("Boat Section Created")
+
+--BoatSpeed Changer
+local xBoat = fishGui:Box("Speed", {
+	flag = "bs";
+	type = 'number';
+}, function(new)
+	for i, v in pairs(game.Workspace:GetChildren()) do 
+		dprint("Current Object Selected: "..v.Name)
+		if v.Name == (game.Players.LocalPlayer.Name.."'s Boat") then
+			dprint("Boat Selected: "..v.Name)
+			v.Controller.VehicleSeat.MaxSpeed = tonumber(new)
+			dprint("BoatSpeed set to "..new)
+			break
+		end
+	end
+end)
+
+--Teleport to Boat
+local bToBoat = fishGui:Button("Teleport to Boat", function()
+	for i, v in pairs(game.Workspace:GetChildren()) do 
+		dprint("Current Object Selected: "..v.Name)
+		if v.Name == (game.Players.LocalPlayer.Name.."'s Boat") then
+			lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			if game.Players.LocalPlayer.Character.Humanoid.Sit then
+				game.Players.LocalPlayer.Character.Humanoid.Sit = false
+			end
+			wait()
+			local coord = v.Controller.VehicleSeat.CFrame
+			dprint("Boat Selected: "..v.Name)
+			hrp.CFrame = CFrame.new(coord.x,coord.y + 3,coord.z)
+			dprint("Teleported to Coordinates: "..tostring(hrp.CFrame))
+			break
+		end
+	end
+end)
+
+
+--Teleport Functions
+
+--Last Location Teleport
+local bReturn = teleGui:Button("Return to Last Location", 
+	function()
+		if lastLocation ~= nil then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastLocation
+		end
+	end
+)
+
+--Master Teleport Search
+
+local masterLocations = {
+	--Port Jackson
+	PortJacksonDocks = Vector3.new(56.7393608, 41.4751053, -63.380661),
+	Aquarium = Vector3.new(-71.4487915, 55.8237305, 77.1413193),
+	BoatShop = Vector3.new(-3.54861736, 46.9481888, -107.122681),
+	SupplyShop = Vector3.new(2.20014167, 53.5718613, 11.437911),
+	PortJacksonCaster = Vector3.new(-52.98069, 54.567421, -20.777195),
+	QuestTavern = Vector3.new(-114.295792, 54.1254578, -67.9122925),
+	Rodney = Vector3.new(-105.481873, 54.1767731, -10.4815578),
+	CoinChests = Vector3.new(-53.1726341, 52.9375458, 13.6784639),
+	PortJacksonPoperson = Vector3.new(-76.9964676, 50.4331894, -132.130676),
+
+	--Volcano Island
+	VolcanoIslandDocks = Vector3.new(2815.75854, 41.5044899, 1470.11658),
+	VolcanoIslandCaster = Vector3.new(2971.24414, 45.0137711, 1409.98901),
+	VolcanoIslandObby = Vector3.new(3162.37256, 48.9485931, 1512.08679),
+	VolcanoIslandObbyEnd = Vector3.new(48146.2109, 2162.26001, 13683.6201),
+	VolcanoIslandPoperson = Vector3.new(3185.36279, 47.8058777, 1239.24707),
+	VolcanoIslandQuest = Vector3.new(3091.27783, 180.46051, 1799.91833),
+
+	--Shadow Isles
+	ShadowIslesDocks = Vector3.new(2189.79932, 42.294281, -2260.20508),
+	ShadowIslesPoperson = Vector3.new(2198.46167, 43.0711288, -2222.51172),
+	ShadowIslesCave = Vector3.new(2144.77222, 50.0127106, -2270.18164),
+	ShadowIslesCasper = Vector3.new(2128.79346, 188.23761, -2222.95239),
+	ShadowIslesFirePlace = Vector3.new(2128.79346, 188.23761, -2222.95239),
+	ShadowIslesBombLocation = Vector3.new(2066.40381, 194.53775, -2432.69336),
+
+	--Ancient Shores
+	AncientShoresDocks = Vector3.new(-2244.64795, 42.2645645, -1716.90173),
+	AncientShoresCasper = Vector3.new(-2582.82251, 51.214386, -1796.34143),
+	AncientShoresGiant = Vector3.new(-2392.20386, 110.919983, -2110.41602),
+	AncientShoresQuest1 = Vector3.new(-2625.92065, 162.517609, -2124.42725),
+	AncientShoresQuest2 = Vector3.new(-2852.25513, 74.7504883, -2232.0437),
+	AncientShoresQuest3 = Vector3.new(-2517.18921, 123.897522, -1611.0531),
+	AncientShoresRiver = Vector3.new(-2427.65845, 45.6136932, -1902.73279),
+
+	--Monster's Borough
+	MonsterBoroughDocks = Vector3.new(-3200.25781, 41.6784821, 2732.46777),
+
+}
+
+teleGui:SearchBox("Master Teleport Search", {
+	location = shared;
+	flag = "mTeleports";
+	list= {
+		"Aquarium";
+		"Port Jackson's Docks";
+		"Boat Shop";
+		"Supply Shop";
+		"Port Jackson's Caster";
+		"Quest Tavern";
+		"Rodney";
+		"Coin Chests";
+		"Port Jackson's Poperson";
+		"Volcano Island's Docks";
+		"Volcano Island's Caster";
+		"Volcano Island's Obby";
+		"Volcano Island's Obby End";
+		"Volcano Island's Poperson";
+		"Volcano Island's Quest";
+		"Shadow Isles' Docks";
+		"Shadow Isles' Poperson";
+		"Shadow Isles' Cave";
+		"Shadow Isles' Casper";
+		"Shadow Isles' Fire Place";
+		"Shadow Isles' Bomb Location";
+		"Ancient Shores' Docks";
+		"Ancient Shores' Casper";
+		"Ancient Shores' Giant";
+		"Ancient Shores' Quest 1";
+		"Ancient Shores' Quest 2";
+		"Ancient Shores' Quest 3";
+		"Ancient Shores' River";
+		"Monster's Borough Docks";
+	}
+},
+	function(new)
+		lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		if game.Players.LocalPlayer.Character.Humanoid.Sit then
+			game.Players.LocalPlayer.Character.Humanoid.Sit = false
+		end
+		wait()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(masterLocations[new:gsub("'s",""):gsub(" ",""):gsub("'","")])
+		dprint("Teleported to " .. new)
+	end
+)
+
+teleGui:Section('Port Jackson')
+dprint("Port Jackson Teleport Section Created")
+
+teleGui:Dropdown("Port Jackson Teleports", {
+	location = shared;
+	flag = "pjTeleports";
+	list = {
+		"Aquarium";
+		"Port Jackson's Docks";
+		"Boat Shop";
+		"Supply Shop";
+		"Port Jackson's Caster";
+		"Quest Tavern";
+		"Rodney";
+		"Coin Chests";
+		"Port Jackson's Poperson";
+	}
+ }, function(new)
+	lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	if game.Players.LocalPlayer.Character.Humanoid.Sit then
+		game.Players.LocalPlayer.Character.Humanoid.Sit = false
+	end
+	wait()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(masterLocations[new:gsub("'s",""):gsub(" ",""):gsub("'","")])
+	dprint("Teleported to " .. new)
+ end)
+
+ teleGui:Section('Volcano Island')
+ dprint("Volcano Island Teleport Section Created")
+
+teleGui:Dropdown("Volcano Island Teleports", {
+	location = shared;
+	flag = "viTeleports";
+	list = {
+		"Volcano Island's Docks";
+		"Volcano Island's Caster";
+		"Volcano Island's Obby";
+		"Volcano Island's Obby End";
+		"Volcano Island's Poperson";
+		"Volcano Island's Quest";
+	}
+ }, function(new)
+	lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	if game.Players.LocalPlayer.Character.Humanoid.Sit then
+		game.Players.LocalPlayer.Character.Humanoid.Sit = false
+	end
+	wait()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(masterLocations[new:gsub("'s",""):gsub(" ",""):gsub("'","")])
+	dprint("Teleported to " .. new)
+ end)
+
+ teleGui:Section('Shadow Isles')
+ dprint("Shadow Isles Teleport Section Created")
+
+ teleGui:Dropdown("Shadow Isles Teleports", {
+	location = shared;
+	flag = "siTeleports";
+	list = {
+		"Shadow Isles' Docks";
+		"Shadow Isles' Poperson";
+		"Shadow Isles' Cave";
+		"Shadow Isles' Casper";
+		"Shadow Isles' Fire Place";
+		"Shadow Isles' Bomb Location";
+	}
+ }, function(new)
+	lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	if game.Players.LocalPlayer.Character.Humanoid.Sit then
+		game.Players.LocalPlayer.Character.Humanoid.Sit = false
+	end
+	wait()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(masterLocations[new:gsub("'s",""):gsub(" ",""):gsub("'","")])
+	dprint("Teleported to " .. new)
+ end)
+
+ teleGui:Section('Ancient Shores')
+ dprint("Ancient Shores Teleport Section Created")
+
+ teleGui:Dropdown("Ancient Shores Teleports", {
+	location = shared;
+	flag = "asTeleports";
+	list = {
+		"Ancient Shores' Docks";
+		"Ancient Shores' Casper";
+		"Ancient Shores' Giant";
+		"Ancient Shores' Quest 1";
+		"Ancient Shores' Quest 2";
+		"Ancient Shores' Quest 3";
+		"Ancient Shores' River";
+	}
+ }, function(new)
+	lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	if game.Players.LocalPlayer.Character.Humanoid.Sit then
+		game.Players.LocalPlayer.Character.Humanoid.Sit = false
+	end
+	wait()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(masterLocations[new:gsub("'s",""):gsub(" ",""):gsub("'","")])
+	dprint("Teleported to " .. new)
+ end)
+
+ teleGui:Section("Monster's Borough")
+ dprint("Monster's Borough Teleport Section Created")
+
+ teleGui:Dropdown("Monster's Borough Teleports", {
+	location = shared;
+	flag = "mbTeleports";
+	list = {
+		"Monster's Borough Docks";
+	}
+ }, function(new)
+	lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	if game.Players.LocalPlayer.Character.Humanoid.Sit then
+		game.Players.LocalPlayer.Character.Humanoid.Sit = false
+	end
+	wait()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(masterLocations[new:gsub("'s",""):gsub(" ",""):gsub("'","")])
+	dprint("Teleported to " .. new)
+ end)
+ 
+
+
+--Main Functions
+
+--Auto Fish Delay
+local minDelay = 3
+local maxDelay = 7
+local xMinDelay = mainGui:Box("Min Delay (3)", {
+	flag = "mindf";
+	type = 'number';
+}, function(new)
+	minDelay = tonumber(new)
+	dprint("Minimum Auto Fish Delay set to " .. new)
+end)
+
+local xMaxDelay = mainGui:Box("Max Delay (7)", {
+	flag = "maxdf";
+	type = 'number';
+}, function(new)
+	maxDelay = tonumber(new)
+	dprint("Maximum Auto Fish Delay set to " .. new)
+end)
+
+--Catch Fish
+local bCatchFish = mainGui:Button("Catch Fish", 
+	function()
+		game.ReplicatedStorage.CloudClientResources.Communication.Events.FishedDone:FireServer()
+	end
+)
+
+--Auto Fish
+local tAutoFish = mainGui:Toggle("Auto Fish", {flag = "fAutoFish"})
+
+_G.fishAuto = false
+_G.fishWaitTime = math.random(minDelay, maxDelay)
+dprint("Global Auto Fish Boolean created")
+loadstring(game:HttpGet("https://pastebin.com/raw/AtqDXgmq", true))()
+
+plr.Character.ChildAdded:Connect(function()
+	_G.fishAuto = mainGui.flags.fAutoFish
+	dprint("Global Auto Fish Boolean set to " .. tostring(mainGui.flags.fAutoFish))
+end)
+plr.Character.ChildRemoved:Connect(function()
+	_G.fishAuto = mainGui.flags.fAutoFish
+	dprint("Global Auto Fish Boolean set to " .. tostring(mainGui.flags.fAutoFish))
+end)
+
+--Sell All
+local bSellAll = mainGui:Button("Sell All", 
+	function()
+		game.ReplicatedStorage.CloudClientResources.Communication.Functions.SellEverything:InvokeServer()
+	end
+)
+
+--Sell All Below Legendary
+local bSellAllBelowLegendary = mainGui:Button("Sell All Below Legendary", 
+	function()
+		for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+			if not v:FindFirstChild("Hold") then 
+				if v.RarityLevel.Value < 5 then
+					dprint("Selling All Below Legendary: " .. v.Name)
+					game.ReplicatedStorage.CloudClientResources.Communication.Functions.SellItem:InvokeServer(v.Name, 1)
+				end
+			end
+			wait(0.010)
+		end
+	end
+)
+
+--Auto Sell
+local tAutoSell = mainGui:Toggle("Auto Sell", {flag = "fAutoSell"})
+
+plr.Backpack.ChildAdded:Connect(function()
+	if mainGui.flags.fAutoSell then
+		game.ReplicatedStorage.CloudClientResources.Communication.Functions.SellEverything:InvokeServer()
+		--[[
+		for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+			if not v:FindFirstChild("Hold") then 
+				dprint("Selling " .. v.Name)
+				game.ReplicatedStorage.CloudClientResources.Communication.Functions.SellItem:InvokeServer(v.Name, 1)
+			end
+			wait(1)
+		end
+		]]
+	end
+end)
+
+plr.CharacterAdded:Connect(function()
+	local bp = Player:WaitForChild('Backpack')
+	bp.ChildAdded:connect(function()
+		if mainGui.flags.fAutoSell then
+			game.ReplicatedStorage.CloudClientResources.Communication.Functions.SellEverything:InvokeServer()
+			--[[
+			for i, v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+				print(v.Name)
+				if string.find(v.Name, "fish") or string.find(v.Name, "Fish") then 
+					print("Selling " .. v.Name)
+					game.ReplicatedStorage.CloudClientResources.Communication.Functions.SellItem:InvokeServer(v.Name, 1)
+				end
+				wait(1)
+			end
+			]]
+		end
+	end)
+end)
+
+--Kill Shark
+local prevLocation
+local bKillShark = mainGui:Button("Kill Shark", 
+	function()
+		dprint("Kill Shark Pressed.")
+		for i, v in pairs(game.Workspace:GetChildren()) do
+			if v:FindFirstChild("Health") and v:FindFirstChild("IsSeaMonster") and v.Name == "GreatWhiteShark" then
+				prevLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+					if game.Players.LocalPlayer.Character.Humanoid.Sit then
+						game.Players.LocalPlayer.Character.Humanoid.Sit = false
+					end
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame + Vector3.new(0, 0, 0)
+					wait(0.25)
+					game.ReplicatedStorage.CloudClientResources.Communication.Events.DamageSeaMonster:FireServer(v, v.Health, true)
+					wait(0.5)
+					dprint("Sent Game Damage to Shark")
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevLocation
+					break
+				elseif game.Players.LocalPlayer:FindFirstChild("Backpack") then
+					for p, q in pairs(game.Players.LocalPlayer:FindFirstChild("Backpack"):GetChildren()) do
+						if q:FindFirstChild("Damage") then
+							q.Parent = game.Players.LocalPlayer.Character
+						end
+					end
+				end
+			end
+		end
+	end
+)
+
+--Kill Orca
+local prevLocation
+local bKillOrca = mainGui:Button("Kill Orca", 
+	function()
+		dprint("Kill Any Pressed.")
+		for i, v in pairs(game.Workspace:GetChildren()) do
+			if v:FindFirstChild("Health") and v:FindFirstChild("IsSeaMonster") and v.Name == "KillerWhale" then
+				prevLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+					if game.Players.LocalPlayer.Character.Humanoid.Sit then
+						game.Players.LocalPlayer.Character.Humanoid.Sit = false
+					end
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame + Vector3.new(0, 0, 0)
+					wait(0.25)
+					game.ReplicatedStorage.CloudClientResources.Communication.Events.DamageSeaMonster:FireServer(v, v.Health, true)
+					wait(0.5)
+					dprint("Sent Game Damage to Shark")
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevLocation
+					break
+				elseif game.Players.LocalPlayer:FindFirstChild("Backpack") then
+					for p, q in pairs(game.Players.LocalPlayer:FindFirstChild("Backpack"):GetChildren()) do
+						if q:FindFirstChild("Damage") then
+							q.Parent = game.Players.LocalPlayer.Character
+						end
+					end
+				end
+			end
+		end
+	end
+)
+
+--Kill Any
+local prevLocation
+local bKillAny = mainGui:Button("Kill Any", 
+	function()
+		dprint("Kill Any Pressed.")
+		for i, v in pairs(game.Workspace:GetChildren()) do
+			if v:FindFirstChild("Health") and v:FindFirstChild("IsSeaMonster") then
+				prevLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+					if game.Players.LocalPlayer.Character.Humanoid.Sit then
+						game.Players.LocalPlayer.Character.Humanoid.Sit = false
+					end
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame + Vector3.new(0, 0, 0)
+					wait(0.25)
+					game.ReplicatedStorage.CloudClientResources.Communication.Events.DamageSeaMonster:FireServer(v, v.Health, true)
+					wait(0.5)
+					dprint("Sent Game Damage to Shark")
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevLocation
+					break
+				elseif game.Players.LocalPlayer:FindFirstChild("Backpack") then
+					for p, q in pairs(game.Players.LocalPlayer:FindFirstChild("Backpack"):GetChildren()) do
+						if q:FindFirstChild("Damage") then
+							q.Parent = game.Players.LocalPlayer.Character
+						end
+					end
+				end
+			end
+		end
+	end
+)
+
+--Auto Any Kill
+local runOnce = true
+local delayAuto = 7
+local tAutoAnyKill = mainGui:Toggle("Auto Any Kill", {flag = "tAutoAnyKill"})
+game.Workspace.ChildAdded:Connect(
+	function ()
+		if runOnce then
+			runOnce = false
+			for i, v in pairs(game.Workspace:GetChildren()) do
+				if v:FindFirstChild("Health") and v:FindFirstChild("IsSeaMonster") and mainGui.flags.tAutoAnyKill then
+					prevLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+					if #game.Players.LocalPlayer:FindFirstChild("Backpack"):GetChildren() + 1 >= game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model").Spaces.Value and mainGui.flags.fAutoSell then
+						dprint("Max Bag Space: " .. game.Players.LocalPlayer.Character:FindFirstChildOfClass("Model").Spaces.Value)
+						dprint("Current Bag Holding: " .. #game.Players.LocalPlayer:FindFirstChild("Backpack"):GetChildren())
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-52.98069, 54.567421, -20.777195)
+						wait(1)
+						game.ReplicatedStorage.CloudClientResources.Communication.Functions.SellEverything:InvokeServer()
+						wait(2)
+					end
+					dprint("Auto Any Kill - Last Location Saved As: " .. tostring(prevLocation))
+					if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+						if game.Players.LocalPlayer.Character.Humanoid.Sit then
+							game.Players.LocalPlayer.Character.Humanoid.Sit = false
+						end
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame + Vector3.new(0, 0, 0)
+						wait(0.25)
+						game.ReplicatedStorage.CloudClientResources.Communication.Events.DamageSeaMonster:FireServer(v, v.Health, true)
+						wait(0.5)
+						dprint("Sent Game Damage to Sea Monster")
+					elseif game.Players.LocalPlayer:FindFirstChild("Backpack") then
+						for p, q in pairs(game.Players.LocalPlayer:FindFirstChild("Backpack"):GetChildren()) do
+							if q:FindFirstChild("Damage") then
+								q.Parent = game.Players.LocalPlayer.Character
+							end
+						end
+					end
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevLocation
+					dprint("Auto Any Kill - Last Location Loaded To: " .. tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame))
+					wait(delayAuto)
+				end
+			end
+			runOnce = true
+		end
+	end
+)
+
+--Teleport to Sunken Ship
+local bToShip = mainGui:Button("Teleport to Sunken Ship", 
+	function()
+		for i, v in pairs(game.Workspace:GetChildren()) do
+			if string.find(v.Name, "ShipModel") then
+				local newFrame = v.HitBox.CFrame
+				lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				if game.Players.LocalPlayer.Character.Humanoid.Sit then
+					game.Players.LocalPlayer.Character.Humanoid.Sit = false
+				end
+				wait()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = newFrame
+				dprint("Teleported to Sunken Ship")
+				return
+			end
+		end
+		dprint("No Sunken Ships Found!")
+		return
+	end
+)
+
+--Auto Ship
+local tToShip = mainGui:Toggle("Auto Ship", {flag = "tToShip"})
+game.Workspace.ChildAdded:Connect(
+	function(child)
+		if string.find(child.Name, "ShipModel") then
+			if mainGui.flags.tToShip then
+				dprint("Ship Model Name: " .. child.Name)
+				local newFrame = child:WaitForChild("HitBox").CFrame
+				lastLocation = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				if game.Players.LocalPlayer.Character.Humanoid.Sit then
+					game.Players.LocalPlayer.Character.Humanoid.Sit = false
+				end
+				wait()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = newFrame
+				dprint("Teleported to Sunken Ship")
+				return
+			end
+		end
+	end
+)
+
+
+--Character Status
+game.Players.LocalPlayer.Character.Humanoid.Died:Connect(function()
+	--Death Check
+	dprint("Character Dead")
+	local vRestore = hrp.CFrame
+	local lastLocation = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+	dprint("Character Death Location Saved")
+	dprint("Respawn on Death is "..tostring(fishGui.flags.fRespawn))
+	
+	--Respawn Check
+	plr.CharacterAdded:wait()
+	repeat wait() until plr.Character:FindFirstChild("HumanoidRootPart")
+	dprint("Character Respawned")
+	
+	inputService = game:GetService("UserInputService")
+	dprint("User Input Service Variable Loaded After Death")
+	playerList = game:GetService("Players")
+	dprint("Player List Variable Loaded After Death")
+	plr = playerList.LocalPlayer
+	dprint("Local Player Variable Loaded After Death")
+	hrp = plr.Character.HumanoidRootPart
+	dprint("HumanoidRootPart Variable Loaded After Death")
+	mse = plr:GetMouse()
+	dprint("Mouse Variable Loaded After Death")
+	
+	
+	cCtrlTp()
+	dprint("After Death CtrlTP Loaded")
+	
+	
+	antiAfk()
+	dprint("After Death Anti-AFK Loaded")
+	
+	if fishGui.flags.fRespawn then
+		hrp.CFrame = vRestore
+		dprint("Character Death Location Loaded")
+	end
+end)
+    end
+})
+
+local Tab = Window:MakeTab({
+  Name = "国王遗产",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+
+Tab:AddButton({
+	Name = "trick",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one"))()
+   end
+})
+
+Tab:AddButton({
+	Name = "ipper hub",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))()
+   end
+})
+
+Tab:AddButton({
+	Name = "Xenon Hub",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/legacy"))()
+   end
+})
+
+Tab:AddButton({
+	Name = "lack",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+   end
+})
+
+Tab:AddButton({
+	Name = "yper hub",
+	Callback = function()
+repeat wait() until game:IsLoaded()loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))() 
+   end
+})
+
+local Tab = Window:MakeTab({
+  Name = "脚本大全2",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+  })
+  
+Tab:AddButton({
+	Name = "动感星期五",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "战斗勇士",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))()
+	end
+})
+
+Tab:AddButton({
+	Name = "强壮传奇",
+	Callback = function()
+loadstring(game:HttpGet('https://ghostbin.co/paste/ctpa/raw'))()
+	end
+})
+
+Tab:AddButton({
+	Name = "进击的僵尸",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Zombie%20Attack", true))()
+	end
+})
+
+Tab:AddButton({
+	Name = "宠物模拟器X",
+	Callback = function()
+     loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "蜂群模拟器",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/3A61hnGA", true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Evade",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "后室",
+	Callback = function()
+     loadstring(game:HttpGet('https://pastebin.com/raw/Gsqd40fL'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Synapse X",
+	Callback = function()
+     loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "彩虹朋友",
+	Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "HoHo blox fruit",
+	Callback = function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+  	end    
+})
+
+local player = Window:MakeTab({
+	Name = "能力大战",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+player:AddButton({ 
+	Name = "能力大战（会覆盖）",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/castycheat/abilitywars/main/Protected%20(29).lua"))()
+  	end
+})
+
+
+local player = Window:MakeTab({
+	Name = "Piggy",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+player:AddButton({ 
+	Name = "Piggy（恐怖佩奇）",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0piggy2", true))()
+  	end
+})
+
+local player = Window:MakeTab({
+	Name = "视觉",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+player:AddButton({ 
+	Name = "动态模糊",
+	Callback = function()
+       	local camera = workspace.CurrentCamera
+local blurAmount = 10
+local blurAmplifier = 5
+local lastVector = camera.CFrame.LookVector
+
+local motionBlur = Instance.new("BlurEffect", camera)
+
+local runService = game:GetService("RunService")
+
+workspace.Changed:Connect(function(property)
+ if property == "CurrentCamera" then
+  print("Changed")
+  local camera = workspace.CurrentCamera
+  if motionBlur and motionBlur.Parent then
+   motionBlur.Parent = camera
+  else
+   motionBlur = Instance.new("BlurEffect", camera)
+  end
+ end
+end)
+
+runService.Heartbeat:Connect(function()
+ if not motionBlur or motionBlur.Parent == nil then
+  motionBlur = Instance.new("BlurEffect", camera)
+ end
+ 
+ local magnitude = (camera.CFrame.LookVector - lastVector).magnitude
+ motionBlur.Size = math.abs(magnitude)*blurAmount*blurAmplifier/2
+ lastVector = camera.CFrame.LookVector
+end)
+  	end
+})
+
+player:AddButton({ 
+	Name = "光影（浅）",
+	Callback = function()
+       	loadstring(game:HttpGet("https://pastebin.com/raw/jHBfJYmS"))()
+  	end
+})
+
+player:AddButton({ 
+	Name = "光影（深）",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+  	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "奇怪严格的爸爸",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yBloodz/Free-scripts/main/Weird%20Strict%20Dad"))(
+	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "鲤鱼游戏",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+	end
+})
