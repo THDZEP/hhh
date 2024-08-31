@@ -5008,19 +5008,6 @@ player:AddButton({
 })
 
 local Tab =Window:MakeTab({
-	Name = "奇怪严格的爸爸",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "1",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/yBloodz/Free-scripts/main/Weird%20Strict%20Dad"))(
-	end
-})
-
-local Tab =Window:MakeTab({
 	Name = "鲤鱼游戏",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -5030,5 +5017,18 @@ Tab:AddButton({
 	Name = "1",
 	Callback = function()
 	 loadstring(game:HttpGet("https://raw.githubusercontent.com/LilFrench21/Hecta/main/Script/Squid%20Game"))()
+	end
+})
+
+local Tab =Window:MakeTab({
+	Name = "奇怪严格的爸爸",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "1",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/yBloodz/Free-scripts/main/Weird%20Strict%20Dad"))()
 	end
 })
