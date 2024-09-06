@@ -1,3 +1,4 @@
+
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -62,7 +63,7 @@ FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and
   FrameUpdateTable[1] = LastIteration
   local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 CurrentFPS = CurrentFPS - CurrentFPS % 1
-  FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+  FpsLabel.Text = ("看片时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
@@ -78,6 +79,18 @@ local about = Window:MakeTab({
 
 CoreGui:SetCore("SendNotification", {
     Title = "Wus脚本",
+    Text = "加载成动，祝您游戏愉快",
+    Duration = 10, 
+})
+
+CoreGui:SetCore("SendNotification", {
+    Title = "记得宣传🤓",
+    Text = "加载成动，祝您游戏愉快",
+    Duration = 10, 
+})
+
+CoreGui:SetCore("SendNotification", {
+    Title = "爱你🤓😘",
     Text = "加载成动，祝您游戏愉快",
     Duration = 10, 
 })
@@ -425,6 +438,21 @@ Tab:AddButton({
 	end
 })
 
+Tab:AddButton({
+    Name = "DOORS第二张外挂汉化版卡密qwe",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/ZS%20III", true))()
+	end
+})
+
+
+Tab:AddButton({
+    Name = "DOORS第二张外挂",
+	Callback = function()
+	loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2RW.lua"))()
+	end
+})
+
 local Tab =Window:MakeTab({
 	Name = "伐木大享",
 	Icon = "rbxassetid://4483345998",
@@ -762,13 +790,15 @@ end
 
 Tab:AddButton({
 
-    Name="不知道",
+    Name="解锁所有元素",
 
     Callback=function()
+ for i,v in pairs(Elements) do
+        game.ReplicatedStorage.rEvents.elementMasteryEvent:FireServer(v)
+        print(v)
+        end
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/5repo/main/script4.lua"))()
-
-    end
+end
 
 })
 
